@@ -4,11 +4,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/site.webmanifest">
+
     <link rel="preload" href="fonts/Montserrat-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
     <link rel="stylesheet" href="css/vendor/swiper-bundle.css" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fonts.css">
@@ -19,16 +26,23 @@
     <link rel="stylesheet" href="css/about-us.css">
     <link rel="stylesheet" href="css/working.css">
     <link rel="stylesheet" href="css/footer.css">
-    <script src="js/vendor/swiper-bundle.js"></script>
-    <script src="js/vendor/jquery-1.12.4.js"></script>
-    <script src="js/vendor/jquery-ui.js"></script>
-    <script src="js/script.js"></script>
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+
+    <script defer src="js/vendor/swiper-bundle.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+    <script defer src="js/script.js"></script>
+    <script>
+      lazyload();
+    </script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/site.webmanifest">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+
     <title>Евклид - Проектные системы</title>
   </head>
   <body>
@@ -74,9 +88,9 @@
             <div class="promo__swiper-wrapper swiper-wrapper">
               <div class="promo__swiper-slide swiper-slide slide1"></div>
 
-              <div class="promo__swiper-slide swiper-slide slide2"></div>
+              <div class="promo__swiper-slide swiper-slide slide2 lazyload"></div>
 
-              <div class="promo__swiper-slide swiper-slide slide3"></div>
+              <div class="promo__swiper-slide swiper-slide slide3 lazyload"></div>
             </div>
             <div class="swiper-pagination">
               <span class="swiper-pagination-bullet"></span>
@@ -103,7 +117,7 @@
 
           <ul class="about-us__list">
             <li class="about-us__list-item-big">
-              <div class="about-us__list-item-details">
+              <div class="about-us__list-item-details lazyload">
                 <p class="about-us__list-details-text">Принимая во внимание показатели успешности, перспективное планирование способствует подготовке и реализации новых принципов.</p>
                 <button class="about-us__list-details-button">Подробнее</button>
               </div>
@@ -157,19 +171,19 @@
             </div>
           </div>
 
-          <div class="working__description working__description-step-2" data-target="two">
+          <div class="working__description working__description-step-2 lazyload" data-target="two">
             <h3 class="working__description-caption">Составляем смету</h3>
 
             <p class="working__description-text">Внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований.</p>
           </div>
 
-          <div class="working__description working__description-step-3" data-target="three">
+          <div class="working__description working__description-step-3 lazyload" data-target="three">
             <h3 class="working__description-caption">Привлекаем подрядчиков</h3>
 
             <p class="working__description-text">Идейные соображения высшего порядка, а также новая модель организационной деятельности требует анализа прогресса профессионального сообщества. Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнить важные задания по разработке прогресса профессионального сообщества.</p>
           </div>
 
-          <div class="working__description working__description-step-4" data-target="four">
+          <div class="working__description working__description-step-4 lazyload" data-target="four">
 
             <h3 class="working__description-caption">Инспектируем все этапы работ</h3>
 
